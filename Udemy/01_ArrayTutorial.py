@@ -4,7 +4,7 @@ import numpy as np
 """ Creating array using array library """
 my_array = array.array('i', [1, 2, 3, 4, 5])
 
-my_arr = np.array([6, 7, 8, 9, 10])
+my_arr = np.array([6, 7, 8, 9, 10], dtype=int)  # dtype argument is only needed when creating an empty array
 
 """ Inserting elements into array """
 my_array.insert(0, 11)  # using array.insert(index, value)
@@ -26,11 +26,11 @@ my_array = array.array('i', [1, 2, 3, 4, 5, 6])
 # Linear Search: iterating over array and compare each element with your searched value
 
 
-def linearSearch(arr, target):
+def linear_search(arr, target):
     for i in range(len(arr)):
         if arr[i] == target:
             return i
     return -1
 
 
-print(linearSearch(my_array, 6))
+print(linear_search(my_array, 6))
