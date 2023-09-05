@@ -54,6 +54,10 @@ print(temp.format(cRoll, place, siblingCount))
 temp1 = "I am Rohit and my Roll is {0}, have {2} siblings & I live in {1}."
 print(temp1.format(cRoll, place, siblingCount))
 
+name = "Eddy"
+errorCode = 40506070
+print("Hello %s, there is an error with error code 0x%x" % (name, errorCode))  # This is called mapping, %x: Hexadecimal
+
 """Escape Characters in python String:"""
 # \'	Single Quote
 # \\	Backslash
@@ -152,3 +156,20 @@ txt = "50"
 x = txt.zfill(10)  # string.zfill(len)
 print(x)
 
+""" Strin Formatting Challange """
+"""
+Print the following with justified layout
+Name    Score
+joy     85
+harry   70
+mugal   55
+"""
+
+print("\nSolution to challange\n".center(67, "*"))
+name = ["joy", "harry", "mugal"]
+score = [85, 70, 55]
+print("{:<10} {:<5}".format("Name", "Score"))
+for index in range(len(name)-1):
+    n = name[index]
+    s = score[index]
+    print("{:<10} {:<5}".format(n, s))
