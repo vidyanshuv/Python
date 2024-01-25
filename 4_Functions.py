@@ -12,7 +12,7 @@ print(f"Sum of both numbers is {addition_function(3, 4)}")
 
 
 # Returning a collection from function
-def list_return(a,b, c):
+def list_return(a, b, c):
     add = a + b + c
     product = a * b * c
     return [add, product]
